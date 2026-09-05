@@ -24,7 +24,7 @@ export class Catalogo {
 
   busqueda: string = '';
   paginaActual: number = 1;
-  productosPorPagina: number = 10;
+  productosPorPagina: number = 12;
   totalPaginas: number = 1;
 
   cargando: boolean = true;
