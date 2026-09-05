@@ -1,0 +1,111 @@
+.metodo-card{
+    cursor:pointer;
+    transition:.25s;
+    border:2px solid #dee2e6;
+}
+
+.metodo-card:hover{
+    transform:translateY(-3px);
+}
+
+.metodo-card.activo{
+    border:2px solid #fd7e14;
+    background:#fff5eb;
+}
+
+.payment-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.payment-option{
+    cursor:pointer;
+}
+
+.payment-option input{
+    display:none;
+}
+
+.payment-option{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    border:2px solid #ddd;
+    border-radius:14px;
+    transition:.25s;
+}
+
+.payment-option:hover{
+    border-color:#198754;
+    transform:translateY(-3px);
+}
+
+/* EFECTIVO */
+.payment-option:has(input[value="EFECTIVO"]:checked){
+    border-color:#6c757d;
+    background:#f8f9fa;
+}
+.payment-option:has(input[value="EFECTIVO"]:checked) .payment-icon{
+    color:#6c757d;
+}
+
+/* TARJETA */
+.payment-option:has(input[value="TARJETA"]:checked){
+    border-color:#f7941d;
+    background:#fff5eb;
+}
+.payment-option:has(input[value="TARJETA"]:checked) .payment-icon{
+    color:#f7941d;
+}
+
+/* YAPE */
+.payment-option:has(input[value="YAPE"]:checked){
+    border-color:#198754;
+    background:#edf8f0;
+}
+.payment-option:has(input[value="YAPE"]:checked) .payment-icon{
+    color:#198754;
+}
+
+.payment-icon{
+    font-size:34px;
+}
+
+.tarjeta-demo{
+    width:320px;
+    height:190px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#f7941d,#c9720e);
+    color: white;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.numero-tarjeta{
+    font-size:24px;
+    letter-spacing:4px;
+    font-weight:bold;
+}
+
+.loading-overlay{
+
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+
+}
+
+.loading-card{
+    background:white;
+    border-radius:18px;
+    width:420px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
