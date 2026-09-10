@@ -1,6 +1,6 @@
 /* =========================================================
    FerreMax - Auth & Profile
-   Clean commerce UI: spacious, soft surfaces, restrained orange
+   Clean commerce UI: spacious, soft surfaces, restrained blue
    ========================================================= */
 
 .auth-page {
@@ -36,8 +36,8 @@
     padding: clamp(2rem, 4vw, 4.5rem) !important;
     display: flex;
     align-items: center;
-    background: linear-gradient(145deg, #fff8f1 0%, #fff1e4 52%, #ffe4cd 100%);
-    color: #3b2417;
+    background: linear-gradient(145deg, #f0f6ff 0%, #e0edff 52%, #0066FF 100%);
+    color: #1e293b;
 }
 
 .auth-side::before,
@@ -52,14 +52,14 @@
     height: 430px;
     right: -220px;
     top: -180px;
-    background: rgba(249, 115, 22, .07);
+    background: rgba(0, 102, 255, .08);
 }
 .auth-side::after {
     width: 260px;
     height: 260px;
     left: -140px;
     bottom: -150px;
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, .7);
 }
 
 .auth-side-content {
@@ -77,8 +77,8 @@
     place-items: center;
     border-radius: 17px;
     background: #fff;
-    color: #f97316;
-    box-shadow: 0 10px 28px rgba(154, 52, 18, .08);
+    color: #0066FF;
+    box-shadow: 0 10px 28px rgba(0, 102, 255, .15);
     font-size: 1.45rem;
 }
 
@@ -88,10 +88,10 @@
     gap: .45rem;
     width: max-content;
     padding: .45rem .75rem;
-    border: 1px solid #f6d8bf;
+    border: 1px solid #cce0ff;
     border-radius: 999px;
-    background: rgba(255,255,255,.72);
-    color: #b45309;
+    background: rgba(255,255,255,.85);
+    color: #0052cc;
     font-size: .76rem;
     font-weight: 800;
 }
@@ -102,12 +102,12 @@
     font-size: clamp(2.35rem, 4vw, 4.25rem);
     line-height: .98;
     letter-spacing: -.055em;
-    color: #2b211b;
+    color: #0f172a;
 }
 
 .auth-side-copy {
     max-width: 520px;
-    color: #795548;
+    color: #475569;
     font-size: 1rem;
     line-height: 1.75;
 }
@@ -122,7 +122,7 @@
     display: flex;
     align-items: center;
     gap: .75rem;
-    color: #67483a;
+    color: #334155;
     font-size: .9rem;
     font-weight: 700;
 }
@@ -134,8 +134,8 @@
     place-items: center;
     flex: 0 0 36px;
     border-radius: 11px;
-    background: rgba(255,255,255,.82);
-    color: #f97316;
+    background: rgba(255,255,255,.9);
+    color: #0066FF;
 }
 
 .auth-main {
@@ -157,7 +157,7 @@
 
 .auth-kicker {
     margin-bottom: .55rem;
-    color: #ea580c;
+    color: #0066FF;
     font-size: .74rem;
     font-weight: 900;
     letter-spacing: .12em;
@@ -214,14 +214,22 @@
 
 .auth-form .form-control:focus,
 .auth-form .form-select:focus {
-    border-color: #fb923c;
-    box-shadow: 0 0 0 .22rem rgba(249, 115, 22, .10);
+    border-color: #0066FF;
+    box-shadow: 0 0 0 .22rem rgba(0, 102, 255, .15);
 }
 
 .auth-submit {
     min-height: 54px;
     border-radius: 13px !important;
+    background-color: #0066FF !important;
+    border-color: #0066FF !important;
+    color: #fff !important;
     font-weight: 800;
+}
+
+.auth-submit:hover {
+    background-color: #0052cc !important;
+    border-color: #0052cc !important;
 }
 
 .auth-social {
@@ -232,11 +240,11 @@
 }
 
 .auth-link {
-    color: #ea580c;
+    color: #0066FF;
     font-weight: 800;
     text-decoration: none;
 }
-.auth-link:hover { color: #c2410c; text-decoration: underline; }
+.auth-link:hover { color: #0052cc; text-decoration: underline; }
 
 .divider-text {
     display: flex;
@@ -267,7 +275,7 @@
     font-size: .76rem;
     line-height: 1.5;
 }
-.auth-note i { color: #f97316; margin-top: .1rem; }
+.auth-note i { color: #0066FF; margin-top: .1rem; }
 
 .otp-send { white-space: nowrap; border-radius: 0 13px 13px 0 !important; }
 
@@ -300,7 +308,7 @@
     background:
         radial-gradient(circle at 84% 18%, rgba(255,255,255,.65) 0 4.2rem, transparent 4.3rem),
         radial-gradient(circle at 8% 92%, rgba(255,255,255,.48) 0 5.5rem, transparent 5.6rem),
-        linear-gradient(135deg, #fff8f1, #ffe6cf);
+        linear-gradient(135deg, #f0f6ff, #dbeafe);
 }
 
 .profile-avatar-wrap {
@@ -317,14 +325,14 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    background: #fff7ed;
+    background: #f0f6ff;
     box-shadow: 0 16px 36px rgba(15,23,42,.17);
 }
 
 .placeholder-avatar {
     display: grid;
     place-items: center;
-    color: #f97316;
+    color: #0066FF;
     font-size: 4rem;
 }
 
@@ -352,10 +360,10 @@
     align-items: center;
     gap: .35rem;
     padding: .38rem .68rem;
-    border: 1px solid #fed7aa;
+    border: 1px solid #bfdbfe;
     border-radius: 999px;
-    background: #fffaf5;
-    color: #9a3412;
+    background: #eff6ff;
+    color: #1d4ed8;
     font-size: .73rem;
     font-weight: 800;
 }
@@ -398,7 +406,7 @@
     flex: 0 0 24px;
     border-radius: 50%;
 }
-.profile-nav-btn img { object-fit: cover; background: #fff7ed; }
+.profile-nav-btn img { object-fit: cover; background: #f0f6ff; }
 .profile-nav-btn .nav-profile-fallback { display: inline-grid; place-items: center; }
 
 @media (max-width: 991.98px) {

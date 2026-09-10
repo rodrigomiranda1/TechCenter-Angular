@@ -47,7 +47,8 @@
     display:block;
     object-fit:contain;
     object-position:center;
-    padding:12px;background:#fff;
+    padding:12px;
+    background:transparent;
     transition:transform .3s ease
 }
 .product-card:hover .product-img{
@@ -55,14 +56,17 @@
 }
 .product-media .product-badge{
     position:absolute;
-    z-index:2;top:.75rem;
-    left:.75rem;margin:0;
+    z-index:2;
+    top:.75rem;
+    left:.75rem;
+    margin:0;
     border-radius:999px;
     padding:.38rem .62rem;
     font-size:.72rem;
-    font-weight:800;color:#0066FF;
-    background:rgba(255,247,237,.94);
-    border:1px solid black;
+    font-weight:800;
+    color:#0066FF;
+    background:rgba(239,246,255,.94);
+    border:1px solid #bfdbfe;
     backdrop-filter:blur(8px)
 }
 .product-code{
@@ -98,7 +102,7 @@
 .product-price{
     font-size:1.35rem;
     font-weight:900;
-    color:black;
+    color:#0f172a;
     letter-spacing:-.02em
 }
 .product-stock{
@@ -153,7 +157,8 @@
     padding:.45rem .7rem;
     border-radius:999px;
     background:rgba(255,255,255,.92);
-    border:1px solid #e2e8f0;color:#475569;
+    border:1px solid #e2e8f0;
+    color:#475569;
     font-size:.75rem;
     font-weight:750;
     box-shadow:0 5px 16px rgba(15,23,42,.08)
@@ -185,14 +190,15 @@
     display:block;
     height:100%;
     width:72%;
-    background:linear-gradient(90deg,#0066FF,#fbbf24)
+    background:linear-gradient(90deg,#0066FF,#0052cc)
 }
 .thumb-img{
     width:66px;
     height:52px;
     object-fit:contain;
     object-position:center;
-    padding:4px;border-radius:8px;
+    padding:4px;
+    border-radius:8px;
     border:1px solid #d1d5db;
     background:#f8fafc
 }
@@ -202,7 +208,7 @@
 .catalog-toolbar{
     border:1px solid #e7eaf0;
     border-radius:18px;
-    background:linear-gradient(135deg,#fff,#fffaf5);
+    background:linear-gradient(135deg,#ffffff,#f0f6ff);
     box-shadow:0 8px 24px rgba(15,23,42,.05)
 }
 @media(max-width:768px){
