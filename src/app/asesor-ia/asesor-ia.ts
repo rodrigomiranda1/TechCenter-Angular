@@ -18,7 +18,7 @@ interface MensajeChat {
 export class AsesorIa {
 
   mensajes: MensajeChat[] = [
-    { rol: 'bot', texto: 'Hola. Dime qué necesitas hacer y te sugeriré productos del inventario, cantidades aproximadas y cuidados importantes.' }
+    { rol: 'bot', texto: 'Hola. Dime qué producto necesitas y te sugeriré productos del inventario y cuidados importantes.' }
   ];
 
   pregunta: string = '';
@@ -27,12 +27,12 @@ export class AsesorIa {
   consultas: ConsultaIa[] = [];
   historialPersistente: boolean = false;
 
-  sugerencias = [
-    { texto: 'Pintar una pared', prompt: 'Necesito pintar una pared interior de 20 m2' },
-    { texto: 'Instalar ducha', prompt: '¿Qué necesito para instalar una ducha eléctrica?' },
-    { texto: 'Perforar concreto', prompt: 'Busco herramientas para perforar concreto' },
-  ];
-
+ sugerencias = [
+  { texto: 'Componentes para mi PC', prompt: 'Dime los mejores procesadores, tarjetas gráficas o placas madre' },
+  { texto: 'Laptops', prompt: 'Busco recomendaciones de laptops gamer con buena relación calidad-precio' },
+  { texto: 'Audífonos o Parlantes', prompt: 'Mejores audífonos o parlantes para la casa' },
+  { texto: 'Consolas y Controles', prompt: '¿Que consolas o controles me recomiendas?' },
+];
   constructor(private iaservice: Iaservice, private cdr: ChangeDetectorRef) {
     this.cargarHistorial();
   }

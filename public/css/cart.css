@@ -8,9 +8,9 @@
     display: flex;
     align-items: center;
     gap: .65rem;
-    border: 1px solid #e7eaf0;
+    border: 1px solid #e2e8f0;
     border-radius: 12px;
-    background: #fff;
+    background: #ffffff;
     padding: .85rem;
     color: #64748b;
 }
@@ -21,7 +21,8 @@
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: #e2e8f0;
+    background: #f1f5f9;
+    color: #64748b;
     font-weight: 850;
 }
 
@@ -33,11 +34,13 @@
 
 .checkout-step.active span {
     background: #0066FF;
-    color: #fff;
+    color: #ffffff;
 }
 
 .checkout-card {
     border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
 }
 
 .cart-list {
@@ -50,16 +53,17 @@
     grid-template-columns: 96px 1fr auto;
     gap: 1rem;
     align-items: center;
-    border: 1px solid #e7eaf0;
+    border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: .85rem;
-    background: #fff;
-    transition: transform .18s ease, border-color .18s ease;
+    background: #ffffff;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
 }
 
 .cart-item:hover {
     transform: translateY(-2px);
     border-color: #bfdbfe;
+    box-shadow: 0 8px 20px rgba(0, 102, 255, .06);
 }
 
 .cart-item-img {
@@ -70,11 +74,12 @@
     object-position: center;
     padding: 5px;
     background: #f8fafc;
-    border: 1px solid #edf0f4;
+    border: 1px solid #e2e8f0;
 }
 
 .cart-item-info h5 {
     margin-bottom: .15rem;
+    color: #0f172a;
 }
 
 .cart-item-info p {
@@ -91,7 +96,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: .75rem;
-    color: #475569;
+    color: #334155;
     font-size: .92rem;
 }
 
@@ -124,7 +129,7 @@
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: #fff;
+    background: #ffffff;
     color: #0066FF;
     box-shadow: 0 2px 8px rgba(15, 23, 42, .08);
     transition: transform .16s ease, background .16s ease, color .16s ease;
@@ -132,7 +137,7 @@
 
 .qty-btn:hover {
     background: #0066FF;
-    color: #fff;
+    color: #ffffff;
     transform: translateY(-1px);
 }
 
@@ -147,10 +152,10 @@
     display: flex;
     align-items: center;
     gap: .75rem;
-    border: 1px solid #e7eaf0;
+    border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: .85rem;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
     transition: border-color .18s ease, background .18s ease, transform .18s ease;
 }
@@ -187,7 +192,7 @@
 
 .payment-option.active .payment-icon {
     background: #0066FF;
-    color: #fff;
+    color: #ffffff;
 }
 
 .demo-card-panel {
@@ -213,7 +218,8 @@
     position: sticky;
     top: 92px;
     border-radius: 14px;
-    background: linear-gradient(180deg, #ffffff, #f0f6ff);
+    border: 1px solid #e2e8f0;
+    background: linear-gradient(180deg, #ffffff, #eff6ff);
 }
 
 .summary-line,
@@ -223,10 +229,12 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: .8rem;
+    color: #334155;
 }
 
 .summary-total {
     font-size: 1.2rem;
+    color: #0f172a;
 }
 
 .summary-total strong {
@@ -238,11 +246,12 @@
     display: flex;
     align-items: center;
     gap: .75rem;
-    border: 1px solid #e7eaf0;
+    border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: .85rem;
     margin-top: .75rem;
-    background: #fff;
+    background: #ffffff;
+    transition: border-color .18s ease, background .18s ease;
 }
 
 .option-tile i {
@@ -268,23 +277,25 @@
 
 .option-tile.active i {
     background: #0066FF;
-    color: #fff;
+    color: #ffffff;
 }
 
+/* Banner de confirmación / Éxito */
 .success-hero {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     border-radius: 18px;
     padding: 46px 22px;
     background:
-        linear-gradient(135deg, rgba(22, 163, 74, .92), rgba(0, 102, 255, .88)),
+        linear-gradient(135deg, rgba(15, 23, 42, .92), rgba(0, 102, 255, .88)),
         url("https://images.unsplash.com/photo-1581091215367-59ab6b372b83?auto=format&fit=crop&w=1400&q=80") center/cover;
-    box-shadow: 0 18px 45px rgba(15, 23, 42, .16);
+    box-shadow: 0 18px 45px rgba(0, 102, 255, .18);
 }
 
 .success-hero h1 {
     font-weight: 900;
     font-size: clamp(2rem, 4vw, 3.4rem);
+    color: #ffffff;
 }
 
 .success-icon {
@@ -297,6 +308,7 @@
     background: rgba(255, 255, 255, .18);
     border: 1px solid rgba(255, 255, 255, .35);
     font-size: 2.5rem;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {

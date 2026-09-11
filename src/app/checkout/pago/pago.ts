@@ -36,7 +36,7 @@ export class Pago {
 
   usarTarjetaDemo(numero: string) {
     this.numeroTarjeta = numero;
-    this.titular = 'CLIENTE FERREMAX';
+    this.titular = 'CLIENTE TECHCENTER';
     this.vence = '11/30';
     this.cvv = '123';
   }

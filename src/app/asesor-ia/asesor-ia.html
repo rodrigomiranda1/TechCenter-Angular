@@ -2,9 +2,9 @@
   <section class="ia-shell">
     <div class="ia-hero">
       <div>
-        <span class="ia-kicker"><i class="bi bi-stars"></i> AsesorIA FerreMax</span>
-        <h1>Cuéntame tu proyecto y te recomiendo productos reales</h1>
-        <p>Ideal para pintar, reparar, instalar, perforar, renovar o comparar opciones antes de comprar.</p>
+        <span class="ia-kicker"><i class="bi bi-stars"></i> AsesorIA TechCenter</span>
+        <h1>Cuéntame tu proyecto y te recomiendo la mejor tecnología</h1>
+        <p>Ideal para armar tu PC, renovar tu laptop, mejorar tu setup gamer o equipar tu oficina.</p>
       </div>
       <div class="ia-robot-mark"><i class="bi bi-robot"></i></div>
     </div>
@@ -13,7 +13,7 @@
       <div class="chat-toolbar">
         <div class="d-flex align-items-center gap-2">
           <span class="chat-status"></span>
-          <strong>Chat de asesoría</strong>
+          <strong>Asistente técnico virtual</strong>
         </div>
         <span class="text-muted small" *ngIf="historialPersistente">Historial guardado en tu cuenta</span>
         <span class="text-muted small" *ngIf="!historialPersistente">Historial temporal de esta sesión</span>
@@ -27,7 +27,7 @@
         </div>
         <div class="chat-message bot" *ngIf="enviando">
           <div class="message-avatar"><i class="bi bi-robot"></i></div>
-          <div class="message-bubble">Pensando...</div>
+          <div class="message-bubble">Analizando compatibilidad y stock...</div>
         </div>
       </div>
 
@@ -38,7 +38,7 @@
       </div>
 
       <form class="chat-compose" (ngSubmit)="enviar()">
-        <textarea class="form-control" rows="2" placeholder="Escribe aquí tu consulta..." [(ngModel)]="pregunta" name="pregunta" required></textarea>
+        <textarea class="form-control" rows="2" placeholder="Ej: ¿Qué componentes necesito para armar una PC de diseño gráfico?..." [(ngModel)]="pregunta" name="pregunta" required></textarea>
         <button class="btn btn-success btn-icon" type="submit" [disabled]="enviando" title="Enviar consulta">
           <i class="bi bi-send"></i> Enviar
         </button>
@@ -47,7 +47,7 @@
 
     <div class="history-panel" *ngIf="consultas.length > 0">
       <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="h5 mb-0">Historial reciente</h2>
+        <h2 class="h5 mb-0">Consultas recientes</h2>
         <span class="badge text-bg-success">{{ consultas.length }} consultas</span>
       </div>
       <p class="small text-muted" *ngIf="!historialPersistente">Este historial se conserva mientras el navegador mantenga la sesión abierta. Si inicias sesión, tus consultas quedan asociadas a tu cuenta.</p>
