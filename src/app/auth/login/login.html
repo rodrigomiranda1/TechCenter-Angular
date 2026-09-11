@@ -33,7 +33,7 @@
               <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-person"></i></span>
                 <input id="loginUsuario" name="usuario" class="form-control"
-                       placeholder="usuario o correo" autocomplete="username"
+                       placeholder="" autocomplete="username"
                        [(ngModel)]="usuario" required>
               </div>
             </div>
@@ -43,7 +43,7 @@
               <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-lock"></i></span>
                 <input id="loginPassword" name="password" type="password" class="form-control"
-                       placeholder="Ingresa tu contraseña" autocomplete="current-password"
+                       placeholder="" autocomplete="current-password"
                        [(ngModel)]="password" required>
               </div>
             </div>
@@ -59,6 +59,14 @@
             <span class="text-muted small">¿Todavía no tienes una cuenta?</span>
             <a class="auth-link ms-1 small" routerLink="/register">Crear cuenta</a>
           </div>
+
+          <br>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-success auth-submit btn-icon w-20" type="submit" routerLink="/inicio">
+                  Ver productos sin iniciar sesión
+            </button>
+          </div>
+
         </div>
       </div>
     </div>

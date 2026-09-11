@@ -49,7 +49,7 @@
                 <div class="card-chip"></div>
                 <div class="card-preview-number">{{ numeroTarjeta || '4509 9535 6623 3704' }}</div>
                 <div class="d-flex justify-content-between">
-                  <span>{{ titular || 'CLIENTE FERREMAX' }}</span>
+                  <span>{{ titular || 'CLIENTE TECHCENTER' }}</span>
                   <span>{{ vence || '11/30' }}</span>
                 </div>
               </div>
@@ -78,7 +78,7 @@
                 <div class="row g-3">
                   <div class="col-md-7">
                     <label class="form-label">Titular</label>
-                    <input class="form-control" [(ngModel)]="titular" name="titular" placeholder="CLIENTE FERREMAX" required>
+                    <input class="form-control" [(ngModel)]="titular" name="titular" placeholder="CLIENTE TECHCENTER" required>
                   </div>
                   <div class="col-6 col-md-3">
                     <label class="form-label">Vence</label>
@@ -123,7 +123,7 @@
               <form (ngSubmit)="confirmar()">
                 <div class="yape-box mb-3">
                   <span>Cuenta destino</span>
-                  <strong>FerreMax Demo - 999 000 111</strong>
+                  <strong>TechCenter Demo - 925 821 525</strong>
                 </div>
                 <label class="form-label">Código de operación</label>
                 <input class="form-control form-control-lg" [(ngModel)]="codigoOperacion" name="codigoOperacion"

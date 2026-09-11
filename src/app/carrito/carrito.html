@@ -2,7 +2,7 @@
   <div class="commerce-header mb-4">
     <div>
       <span class="eyebrow"><i class="bi bi-shield-check"></i> Compra segura</span>
-      <h1 class="page-title mb-1">Checkout FerreMax</h1>
+      <h1 class="page-title mb-1">Checkout TechCenter</h1>
       <p class="text-muted mb-0">Revisa tu carrito, confirma entrega y prepara el comprobante.</p>
     </div>
     <a class="btn btn-outline-success btn-icon" routerLink="/inicio">
@@ -30,7 +30,7 @@
             <i class="bi bi-bag-x"></i>
             <h3>Tu carrito está vacío</h3>
             <p>Agrega productos del catálogo para iniciar una compra.</p>
-            <a class="btn btn-success btn-icon" routerLink="/inicio"><i class="bi bi-shop"></i> Ir al catálogo</a>
+            <button class="btn btn-success auth-submit btn-icon w-20" type="submit" routerLink="/inicio">Ir al catálogo</button>
           </div>
 
           <div class="cart-list" *ngIf="resumen.items.length > 0">
